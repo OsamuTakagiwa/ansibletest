@@ -10,11 +10,7 @@
 - name: Windows Update
   hosts: win2022
   tasks:
-
     - name: Install all security, critical, and rollup updates without a scheduled task
-
       win_updates:
-
         category_names:
-
           - SecurityUpdates
