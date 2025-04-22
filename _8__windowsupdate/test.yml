@@ -10,9 +10,7 @@
     - name: windows update
       win_updates:
         category_names:
-        - CriticalUpdates
         - SecurityUpdates
-        - UpdateRollups
         state: installed
 #        reboot: yes
 #        reboot_timeout: 1800
