@@ -4,3 +4,6 @@
   tasks:
     - name: ping
       win_ping:
+    - name: service
+      win_service:
+        name: FLEXIm License Manager
