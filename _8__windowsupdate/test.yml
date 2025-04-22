@@ -1,8 +1,11 @@
 ---
-- name: Hello World Sample
+- name: test
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: ls
+      shell: ls
+      register: result
+    - name: show result
       debug:
-        msg: "Hello World!"
+        msg: "{{result.stdout}}"
 
