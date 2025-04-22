@@ -8,7 +8,7 @@
       win_service:
         name: FLEXlm License Manager
     - name: windows update
-      win_update:
+      win_updates:
         category_names:
         - CriticalUpdates
         - SecurityUpdates
