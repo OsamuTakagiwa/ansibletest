@@ -6,4 +6,4 @@
       win_ping:
     - name: service
       win_service:
-        name: FLEXIm License Manager
+        name: FLEXlm License Manager
