@@ -12,10 +12,7 @@
         category_names:
         - SecurityUpdates
         state: installed
-#        reboot: yes
-#        reboot_timeout: 1800
       register: update_result
     - name: debug
-      debug: 
-        var: update_result
-        verbosity: 0
+      debug:
+        msg: "{{ update_result }}"
