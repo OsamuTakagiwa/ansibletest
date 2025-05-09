@@ -1,0 +1,13 @@
+- name: csv test
+  hosts: all 
+  tasks:
+    - name: csvfile.csv
+      community.general.read_csv:
+        path: csvfile.csv
+      register: csv_data
+      delegate_to: localhost
+    
+    - name: show csv_data
+      debug:
+       var: csv_data
+
